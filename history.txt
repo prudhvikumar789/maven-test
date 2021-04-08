@@ -1,0 +1,284 @@
+    1  sudo apt-get update
+    2  sudo add-apt-repository ppa:webupd8team/java
+    3  sudo apt-get install oracle-java8-set-default
+    4  su -
+    5  sudo 
+    6  echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee /etc/apt/sources.list.d/webupd8team-java.list
+    7  echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee -a /etc/apt/sources.list.d/webupd8team-java.list
+    8  apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886
+    9  apt-get update
+   10  apt-get install oracle-java8-installer
+   11  sudo echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee /etc/apt/sources.list.d/webupd8team-java.list
+   12  echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee /etc/apt/sources.list.d/webupd8team-java.list
+   13  sudo chmod -R  777 /etc/apt/
+   14  sudo echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee /etc/apt/sources.list.d/webupd8team-java.list
+   15  sudo echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee -a /etc/apt/sources.list.d/webupd8team-java.list
+   16  sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886
+   17  sudo apt-get update
+   18  sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886
+   19  sudo apt-get update
+   20  sudo apt-get install oracle-java8-installer
+   21  sudo apt-cache policy oracle-java8-installer
+   22  cd test/sample-project-maven/
+   23  ls -la
+   24  mvn clean
+   25  mvn compile
+   26  web3j wallet create
+   27  sudo apt-get install web3j
+   28  mvn clean
+   29  mvn build
+   30  mvn deploy
+   31  cd ../
+   32  ls
+   33  git clone https://github.com/daticahealth/java-tomcat-maven-example.git
+   34  ls -la
+   35  cd java-tomcat-maven-example/
+   36  ls
+   37  mvn clean
+   38  mvn package
+   39  ls -la
+   40  cd target/
+   41  ls
+   42  git status
+   43  cd ../
+   44  rm -rf java-tomcat-maven-example/
+   45  ls -la
+   46  git clone https://github.com/daticahealth/java-tomcat-maven-example.git
+   47  cd java-tomcat-maven-example/
+   48  ls -la
+   49  mvn deploy
+   50  mvn install
+   51  mvn clean
+   52  mvn package
+   53  java -jar target/dependency/webapp-runner.jar target/*.war
+   54  ls
+   55  sudo apt-get update
+   56  sudo vi /etc/apt/sources.list
+   57  sudo apt-get update
+   58  history
+   59  rm -rf /etc/apt/sources.list.d/webupd8team-java.list
+   60  sudo apt-get update
+   61  sudo remove-apt-repository ppa:webupd8team/java
+   62  sudo remove-apt-repository --remove ppa:webupd8team/java
+   63  sudo add-apt-repository --remove ppa:webupd8team/java
+   64  sudo apt-get update
+   65  clear
+   66  java -version
+   67  sudo apt install default-jre
+   68  sudo apt install default-jdk
+   69  wget https://mirrors.estointernet.in/apache/maven/maven-3/3.8.1/binaries/apache-maven-3.8.1-bin.tar.gz
+   70  java -version
+   71  cp apache-maven-3.8.1-bin.tar.gz /opt/
+   72  ls -la
+   73  tar -xvzf apache-maven-3.8.1-bin.tar.gz 
+   74  ls -la
+   75  mv apache-maven-3.8.1 maven
+   76  cd maven/
+   77  ls
+   78  pwd
+   79  javajava -version
+   80  java -version
+   81  cd /etc/
+   82  cd profile.d/
+   83  ls -la
+   84  echo "export PATH=$PATH:/home/ubuntu/maven/bin" >> maven.sh
+   85  sudo echo "export PATH=$PATH:/home/ubuntu/maven/bin" >> maven.sh
+   86  sudo chmod -R 777 /etc/profile.d/
+   87  sudo echo "export PATH=$PATH:/home/ubuntu/maven/bin" >> maven.sh
+   88  sudo echo "export MVN_HOME=/home/ubuntu/maven" >> maven.sh
+   89  cat maven.sh 
+   90  chmod 777 maven.sh 
+   91  ./maven.sh 
+   92  mvn --version
+   93  source /etc/profile.d/maven.sh
+   94  mvn -version
+   95  clear
+   96  hiistory
+   97  history
+   98  git clonehttps://github.com/web3j/sample-project-maven.git
+   99  mkdir test
+  100  cd test/
+  101  git clone https://github.com/web3j/sample-project-maven.git
+  102  ls -la
+  103  cd sample-project-maven/
+  104  ls -la
+  105  sudo service apache 2 status
+  106  sudo service apache2 status
+  107  while true ; echo 0
+  108  while true | echo 0
+  109  sudo service apache2 stop
+  110  sudo vi /etc/apache2/apache2.conf
+  111  sudo vi /etc/apache2/ports.conf,
+  112  sudo vi /etc/apache2/ports.conf
+  113  sudo service apache2 restart
+  114  sudo service apache2 stop
+  115  sudo vi  /etc/apache2/sites-enabled/000-default.conf
+  116  sudo service apache2 restart
+  117  curl http://localhost:81
+  118  sudo vi  /etc/apache2/sites-enabled/000-default.conf
+  119  sudo vi /etc/apache2/ports.conf
+  120  sudo service apache2 restart
+  121  curl http://localhost:81
+  122  sudo ifconfig
+  123  cd test/java-tomcat-maven-example/
+  124  ls -la
+  125  java -jar target/dependency/webapp-runner.jar target/*.war
+  126  clear
+  127  mvn clean
+  128  sudo service tomcat7 status
+  129  sudo apt-get install tomcat
+  130  sudo apt-get install tomcat7
+  131  sudo apt-cache policy tomcat
+  132  sudo apt-cache policy tomcat9
+  133  sudo apt-cache policy tomcat10
+  134  sudo apt install tomcat9 tomcat9-admin
+  135  sudo systemctl enable tomcat9
+  136  sudo ufw allow from any to any port 8080 proto tcp
+  137  sudo vi /etc/tomcat9/tomcat-users.xml
+  138  sudo systemctl restart tomcat9
+  139  cd 
+  140  cd maven/
+  141  ls
+  142  cd conf/
+  143  ls -la
+  144  vi settings.xml 
+  145  cd
+  146  cd test/java-tomcat-maven-example/
+  147  vi pom.xml 
+  148  mvn tomcat7:deploy
+  149  cd 
+  150  cd maven/conf/
+  151  vi settings.xml 
+  152  cd
+  153  cd test/java-tomcat-maven-example/
+  154  mvn tomcat7:deploy
+  155  cd 
+  156  cd maven/conf/
+  157  vi settings.xml 
+  158  cd ../
+  159  cd
+  160  cd test/
+  161  git clone https://github.com/prudhvikumar789/maven-test.git
+  162  cd maven-test/
+  163  ls
+  164  cp -r /home/ubuntu/maven/conf/settings.xml .
+  165  git add .
+  166  git commit -m "added"
+  167  git push
+  168  cd test/maven-test/
+  169  git pull
+  170  mv /home/ubuntu/maven/conf/settings.xml /home/ubuntu/maven/conf/old_settings.xml 
+  171  cp settings.xml /home/ubuntu/maven/conf/settings.xml
+  172  cd ../java-tomcat-maven-example/
+  173  mvn tomcat7:deploy
+  174  cd ../maven-test/
+  175  git pull
+  176  cp settings.xml /home/ubuntu/maven/conf/settings.xml
+  177  cd ../java-tomcat-maven-example/
+  178  mvn tomcat7:deploy
+  179  cat /home/ubuntu/maven/conf/settings.xml
+  180  clear
+  181  mvn tomcat7:deploy
+  182  mvn clean
+  183  cd test/maven-test/
+  184  git pull
+  185  cp settings.xml /home/ubuntu/maven/conf/settings.xml 
+  186  mvn clean
+  187  git pull
+  188  cp settings.xml /home/ubuntu/maven/conf/settings.xml 
+  189  cd ../java-tomcat-maven-example/
+  190  mvn clean
+  191  mv /home/ubuntu/maven/conf/old_settings.xml /home/ubuntu/maven/conf/settings.xml
+  192  ls -la /home/ubuntu/maven/conf/settings.xml
+  193  cd
+  194  cd /home/ubuntu/maven/conf
+  195  ls -la
+  196  vi settings.xml 
+  197  clear
+  198  cd
+  199  cd test/maven-test/
+  200  git pull
+  201  cp settings.xml /home/ubuntu/maven/conf/settings.xml 
+  202  cp settings.xml /home/ubuntu/maven/conf/settings.xml
+  203  cd ../java-tomcat-maven-example/
+  204  mv clean
+  205  mvn clean
+  206  mvn tomcat7:deploy
+  207  ls -la
+  208  cd src/
+  209  ls
+  210  cd main/
+  211  ls -la
+  212  cd webapp/WEB-INF/
+  213  ls
+  214  cat web.xml 
+  215  vi web.xml 
+  216  clear
+  217  ls -la
+  218  cd ../
+  219  ls -la
+  220  vi index.jsp 
+  221  cd ../
+  222  mvn tomcat7:deploy
+  223  mvn clean
+  224  mvn tomcat7:deploy
+  225  mvn tomcat7:redeploy
+  226  cd test/java-tomcat-maven-example/
+  227  la -ls
+  228  vi pom.xml 
+  229  clear
+  230  vi pom.xml 
+  231  clear
+  232  ls -la
+  233  mvn  clean
+  234  clear
+  235  mvn tomcat9:deploy
+  236  clear
+  237  history
+  238  clear
+  239  mvn tomcat7:deploy
+  240  cd test/
+  241  ls -la
+  242  cd java-tomcat-maven-example/
+  243  clear
+  244  ls
+  245  mvn clean
+  246  cd src/main/webapp/
+  247  ls
+  248  vi index.jsp 
+  249  mvn tomcat7:deploy
+  250  clear
+  251  mvn package
+  252  cd ../../../
+  253  ls
+  254  mvn tomcat7:deploy
+  255  mvn tomcat7:redeploy
+  256  cd tarq
+  257  ls -la
+  258  cd target/
+  259  ls -la
+  260  cd ../
+  261  java -jar target/dependency/webapp-runner.jar target/*.war
+  262  clear
+  263  sudo ar
+  264  clear
+  265  sudo service tomcat9 stop
+  266  java -jar target/dependency/webapp-runner.jar target/*.war
+  267  cd test/java-tomcat-maven-example/
+  268  clear
+  269  sudo service tomcat9 status
+  270  java -jar target/dependency/webapp-runner.jar target/*.war
+  271  cd test/java-tomcat-maven-example/
+  272  clear
+  273  ls -la
+  274  mvn clean
+  275  clear
+  276  mvn compile
+  277  ls -la
+  278  ls
+  279  clear
+  280  cd test/
+  281  ls -la
+  282  cd maven-test/
+  283  git pull
+  284  history > history.txt
