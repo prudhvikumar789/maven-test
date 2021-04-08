@@ -39,16 +39,18 @@
           </execution>
         </executions>
 </plugin>
-<plugin>
-     <groupId>org.apache.tomcat.maven</groupId>
-       <artifactId>tomcat7-maven-plugin</artifactId>
-       <version>2.2</version>
-       <configuration>
-           <url>http://localhost:8080/manager/text</url>
-           <server>TomcatServer</server>
-	   <path>/mkyongWebApp</path>
-       </configuration>
-      </plugin>
-    </plugins>
+     <plugin>
+	<groupId>org.apache.tomcat.maven</groupId>
+	<artifactId>tomcat7-maven-plugin</artifactId>
+	<version>2.2</version>
+	<configuration>
+		<!-- Use tomcat9 Deploy app here server Values in tags and step 2 maven In the configuration file id Value consistent-->
+		<url>http://localhost:8080/manager/text</url>
+		<server>tomcat9</server>
+		<path>/mymavenapp</path>
+		<update>true</update>
+	</configuration>
+    </plugin>
+</plugins>
   </build>
 </project>
